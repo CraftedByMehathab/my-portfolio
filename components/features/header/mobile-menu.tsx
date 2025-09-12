@@ -7,8 +7,8 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "../ui/sheet";
-import { MobileThemeSwitch } from "../theme/mobile-theme-switch";
+} from "@/components/ui/sheet";
+import { MobileThemeSwitch } from "@/components/theme/mobile-theme-switch";
 
 export const MobileMenu = () => {
   return (
