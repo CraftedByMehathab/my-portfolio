@@ -1,3 +1,4 @@
+import { LucideAtom } from "lucide-react";
 import React from "react";
 
 export const FloatingText = () => {
@@ -24,6 +25,10 @@ export const FloatingText = () => {
       <p className="animate-float absolute top-[70%] left-[70%] opacity-20 text-primary">
         {"=>"}
       </p>
+      <p className="animate-float absolute top-[75%] left-[75%] opacity-20 text-primary">
+        {"let"}
+      </p>
+      <LucideAtom className="animate-float absolute top-[80%] left-[60%] opacity-20 text-primary" />
     </>
   );
 };

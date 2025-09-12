@@ -13,7 +13,7 @@ import { MobileThemeSwitch } from "@/components/theme/mobile-theme-switch";
 export const MobileMenu = () => {
   return (
     <Sheet>
-      <SheetTrigger>
+      <SheetTrigger className="md:hidden">
         <LucideMenu className="text-primary h-8 w-8" />
       </SheetTrigger>
       <SheetContent className="dark:bg-accent">

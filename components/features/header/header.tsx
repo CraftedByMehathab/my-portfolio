@@ -2,6 +2,7 @@ import React from "react";
 
 import { MobileMenu } from "./mobile-menu";
 import { LucideFileTerminal } from "lucide-react";
+import { WebThemeSwitch } from "@/components/theme/web-theme-switch";
 
 export const Header = () => {
   return (
@@ -12,6 +13,7 @@ export const Header = () => {
       </p>
 
       <MobileMenu />
+      <WebThemeSwitch className="hidden md:flex" />
     </header>
   );
 };
