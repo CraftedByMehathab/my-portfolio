@@ -13,7 +13,7 @@ export const MobileThemeSwitch = ({ className }: { className?: string }) => {
     <span className={cn("flex", className)}>
       <Label className="mr-2">Dark Mode</Label>
       <Switch
-        checked={theme == "light"}
+        checked={theme == "dark"}
         onCheckedChange={() =>
           setTheme((currentTheme) =>
             currentTheme === "light" ? "dark" : "light"
