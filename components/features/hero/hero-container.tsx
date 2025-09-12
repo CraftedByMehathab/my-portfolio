@@ -2,6 +2,8 @@ import React from "react";
 import { HeroImage } from "./hero-image";
 import { Typewriting } from "@/components/type-writing";
 import { FloatingText } from "./floating-text";
+import { Button } from "@/components/ui/button";
+import { LucideArrowRight, LucideMail } from "lucide-react";
 
 export const HeroContainer = () => {
   return (
@@ -26,6 +28,14 @@ export const HeroContainer = () => {
           I build exceptional digital experiences with clean, efficient code and
           modern technologies.
         </p>
+        <Button size="lg" className="w-3xs">
+          View Projects
+          <LucideArrowRight />
+        </Button>
+        <Button variant="outline" size="lg" className="w-3xs">
+          Contact Me
+          <LucideMail />
+        </Button>
       </section>
       <div className="absolute -z-10 top-0 left-0 right-0 bottom-0">
         <FloatingText />
