@@ -2,6 +2,7 @@
 import { useTypewriter } from "@/hooks/use-typewritter";
 import { cn } from "@/lib/utils";
 import React from "react";
+import { TypeBlinker } from "./type-blinker";
 
 type TypewritingProps = {
   list: string[];
@@ -28,12 +29,7 @@ export const Typewriting = ({
   return (
     <p className={cn("h-auto", className)}>
       {displayText}
-      <span
-        className={cn(
-          "inline-block w-0.5 h-[1rem] ml-0.5 bg-current animate-blink",
-          isComplete && !loop && "opacity-0"
-        )}
-      />
+      <TypeBlinker className={cn(isComplete && !loop && "opacity-0")} />
     </p>
   );
 };
