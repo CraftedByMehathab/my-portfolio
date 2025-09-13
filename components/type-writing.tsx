@@ -30,7 +30,7 @@ export const Typewriting = ({
       {displayText}
       <span
         className={cn(
-          "inline-block w-0.5 h-[1rem] ml-0.5 bg-current animate-pulse",
+          "inline-block w-0.5 h-[1rem] ml-0.5 bg-current animate-blink",
           isComplete && !loop && "opacity-0"
         )}
       />

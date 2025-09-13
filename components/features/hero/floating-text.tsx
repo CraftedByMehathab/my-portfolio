@@ -13,10 +13,10 @@ export const FloatingText = () => {
       <p className="animate-float absolute top-[60%] left-[50%] opacity-20 text-primary">
         {"const"}
       </p>
-      <p className="animate-float absolute top-[80%] left-[30%] opacity-20 text-primary">
+      <p className="animate-float absolute top-[80%] left-[5%] opacity-20 text-primary">
         {"function()"}
       </p>
-      <p className="animate-float absolute top-[40%] left-[10%] opacity-20 text-primary">
+      <p className="animate-float absolute top-[50%] left-[10%] opacity-20 text-primary">
         {"{}"}
       </p>
       <p className="animate-float absolute top-[20%] left-[60%] opacity-20 text-primary">
@@ -28,7 +28,7 @@ export const FloatingText = () => {
       <p className="animate-float absolute top-[75%] left-[75%] opacity-20 text-primary">
         {"let"}
       </p>
-      <LucideAtom className="animate-float absolute top-[80%] left-[60%] opacity-20 text-primary" />
+      <LucideAtom className="animate-float absolute top-[55%] left-[30%] opacity-20 text-primary" />
     </>
   );
 };

@@ -1,9 +1,15 @@
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
 
-export const HeroImage = () => {
+export const HeroImage = ({ className = "" }: { className?: string }) => {
   return (
-    <div className="rounded-full overflow-hidden h-36 w-36 border-primary border-4 shadow">
+    <div
+      className={cn(
+        "rounded-full overflow-hidden h-36 w-36 border-primary border-4 shadow",
+        className
+      )}
+    >
       <Image
         src="/mehathab.jpeg"
         alt="Dev Image"
