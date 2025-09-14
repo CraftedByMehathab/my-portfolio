@@ -4,6 +4,8 @@ import { Typewriting } from "@/components/type-writing";
 import { FloatingText } from "./floating-text";
 import { Button } from "@/components/ui/button";
 import { LucideArrowRight, LucideMail } from "lucide-react";
+import Link from "next/link";
+import { contactPath } from "@/utils/paths";
 
 const HeroIntroText = () => (
   <p className="text-lg max-w-md">
@@ -19,9 +21,10 @@ const ActionButtons = () => (
       View Projects
       <LucideArrowRight />
     </Button>
-    <Button variant="outline" size="lg" className="m-2">
-      Contact Me
-      <LucideMail />
+    <Button variant="outline" size="lg" className="m-2" asChild>
+      <Link href={contactPath()}>
+        Contact Me <LucideMail />
+      </Link>
     </Button>
   </div>
 );
