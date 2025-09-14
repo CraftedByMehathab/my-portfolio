@@ -11,7 +11,7 @@ export const MobileThemeSwitch = ({ className }: { className?: string }) => {
   const { setTheme, theme } = useTheme();
   return (
     <span className={cn("flex", className)}>
-      <Label className="mr-2">Dark Mode</Label>
+      <Label className="mr-2 text-secondary-foreground">Dark Mode</Label>
       <Switch
         checked={theme == "dark"}
         onCheckedChange={() =>

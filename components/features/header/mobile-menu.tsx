@@ -9,6 +9,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { MobileThemeSwitch } from "@/components/theme/mobile-theme-switch";
+import { MenuItems } from "./menu-items";
 
 export const MobileMenu = () => {
   return (
@@ -19,10 +20,11 @@ export const MobileMenu = () => {
       <SheetContent className="dark:bg-accent">
         <SheetHeader>
           <SheetTitle>
-            <LucideCodeXml className="h-8 w-8 text-primary" />
+            <LucideCodeXml className="h-8 w-8 text-primary ml-4" />
           </SheetTitle>
-          <SheetDescription className="space-y-4 mt-4">
-            <MobileThemeSwitch />
+          <SheetDescription className="space-y-4 mt-4 flex flex-col justify-center items-start">
+            <MenuItems />
+            <MobileThemeSwitch className="px-4" />
           </SheetDescription>
         </SheetHeader>
       </SheetContent>

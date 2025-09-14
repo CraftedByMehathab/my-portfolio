@@ -13,8 +13,8 @@ export const HeroImage = ({ className = "" }: { className?: string }) => {
       <Image
         src="/mehathab.jpeg"
         alt="Dev Image"
-        width={300}
-        height={300}
+        width={400}
+        height={400}
       ></Image>
     </div>
   );
