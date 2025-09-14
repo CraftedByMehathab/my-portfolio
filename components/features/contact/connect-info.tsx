@@ -50,7 +50,7 @@ const SocialIcons = () => (
   <ul className="flex space-x-4">
     <li>
       <Button asChild variant="link" className="p-0">
-        <Link href="https://github.com/CraftedByMehathab">
+        <Link href="https://github.com/CraftedByMehathab" target="_blank">
           <div className="flex justify-center items-center w-9 h-9 bg-secondary text-secondary-foreground hover:bg-primary hover:text-secondary rounded-full hover:-translate-y-[5px]">
             <LucideGithub />
           </div>
@@ -59,7 +59,7 @@ const SocialIcons = () => (
     </li>
     <li>
       <Button asChild variant="link" className="p-0">
-        <Link href="https://www.linkedin.com/in/mehathab/">
+        <Link href="https://www.linkedin.com/in/mehathab/" target="_blank">
           <div className="flex justify-center items-center w-9 h-9 bg-secondary text-secondary-foreground hover:bg-primary hover:text-secondary rounded-full hover:-translate-y-[5px]">
             <LucideLinkedin />
           </div>
