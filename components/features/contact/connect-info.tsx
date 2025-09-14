@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import React, { ReactNode } from "react";
+import { SocialIcon } from "./social-icon";
 
 const InfoLine = ({
   icon,
@@ -33,7 +34,6 @@ const InfoLine = ({
         {href ? (
           <Link
             href={href}
-            target="_blank"
             className="text-secondary-foreground group-hover:text-primary gap-0"
           >
             {content}
@@ -46,25 +46,35 @@ const InfoLine = ({
   );
 };
 
-const SocialIcons = () => (
-  <ul className="flex space-x-4">
+export const SocialIcons = ({
+  iconClassName,
+  className,
+}: {
+  iconClassName?: string;
+  className?: string;
+}) => (
+  <ul className={cn("flex space-x-4", className)}>
     <li>
-      <Button asChild variant="link" className="p-0">
-        <Link href="https://github.com/CraftedByMehathab" target="_blank">
-          <div className="flex justify-center items-center w-9 h-9 bg-secondary text-secondary-foreground hover:bg-primary hover:text-secondary rounded-full hover:-translate-y-[5px]">
-            <LucideGithub />
-          </div>
-        </Link>
-      </Button>
+      <SocialIcon
+        iconClassName={iconClassName}
+        icon={<LucideGithub />}
+        href="https://github.com/CraftedByMehathab"
+      />
     </li>
     <li>
-      <Button asChild variant="link" className="p-0">
-        <Link href="https://www.linkedin.com/in/mehathab/" target="_blank">
-          <div className="flex justify-center items-center w-9 h-9 bg-secondary text-secondary-foreground hover:bg-primary hover:text-secondary rounded-full hover:-translate-y-[5px]">
-            <LucideLinkedin />
-          </div>
-        </Link>
-      </Button>
+      <SocialIcon
+        iconClassName={iconClassName}
+        icon={<LucideLinkedin />}
+        href="https://www.linkedin.com/in/mehathab/"
+      />
+    </li>
+    <li>
+      <SocialIcon
+        iconClassName={iconClassName}
+        icon={<LucideMail />}
+        target="_self"
+        href="mailto:mehathab.raja@outlook.com"
+      />
     </li>
   </ul>
 );
