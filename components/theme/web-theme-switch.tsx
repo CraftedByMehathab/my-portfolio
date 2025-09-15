@@ -12,6 +12,7 @@ export const WebThemeSwitch = ({ className }: { className?: string }) => {
     <Button
       variant="outline"
       size="icon"
+      role="button"
       className={cn(className)}
       onClick={() =>
         setTheme((currentTheme) =>

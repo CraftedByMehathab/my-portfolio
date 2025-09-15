@@ -6,7 +6,7 @@ export const HeroImage = ({ className = "" }: { className?: string }) => {
   return (
     <div
       className={cn(
-        "rounded-full overflow-hidden h-36 w-36 border-primary border-4 shadow",
+        "rounded-full overflow-hidden h-36 w-36 border-primary border-4 shadow-2xl",
         className
       )}
     >

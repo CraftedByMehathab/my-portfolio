@@ -18,8 +18,8 @@ export const ContainerLayout = ({
   return (
     <section className={cn("", className)} id={id}>
       <header className="space-y-4 max-w-lg">
-        <h2 className="text-3xl font-extrabold flex space-x-2">
-          <LucideCodeXml className="h-11 w-11 text-primary " />
+        <h2 className="text-2xl md:text-3xl font-extrabold flex space-x-2">
+          <LucideCodeXml className="h-10 w-10 md:h-11 md:w-11 text-primary " />
           <span>{title}</span>
         </h2>
         <p className="text-lg">{introText}</p>
