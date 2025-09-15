@@ -18,11 +18,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Mehathab Shaik | Portfolio",
   description: "Senior Software Engineer Portfolio",
-  openGraph: {
-    images: [{ url: "/mehathab.jpeg" }],
+  icons: {
+    icon: [{ url: "/logo.svg", type: "image/svg+xml" }],
   },
 };
-<meta property="og:image" content="Link preview image URL"></meta>;
 
 export default function RootLayout({
   children,
