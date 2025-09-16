@@ -9,7 +9,7 @@ export const ContactContainer = () => {
       id="contact"
       title="Get In Touch"
       introText="Have a project in mind or want to discuss potential opportunities? I'd love to hear from you."
-      className="border p-4 md:p-8 rounded-lg border-primary shadow-2xl mb-36 scroll-mt-20"
+      className="border p-4 md:p-8 rounded-lg border-primary shadow-2xl mb-36 scroll-mt-20 mt-20"
     >
       <div className="py-8 space-y-8 space-x-8 grid md:grid-cols-2">
         <ContactInfo className="" />
