@@ -72,7 +72,7 @@ export const SkillsContainer = () => {
             <SkillsRenderer skills={DEVOPS_SKILLSET} />
           </SkillSubContainer>
         </div>
-        <SkillSummary className="md:col-span-3 max-h-dvh overflow-y-scroll self-center" />
+        <SkillSummary className="md:col-span-3 max-h-dvh overflow-y-auto self-center" />
       </div>
     </ContainerLayout>
   );
