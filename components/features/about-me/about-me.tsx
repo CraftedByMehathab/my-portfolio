@@ -1,4 +1,5 @@
 import React from "react";
+import { Education } from "./education";
 
 export const AboutMe = () => {
   return (
@@ -22,6 +23,8 @@ export const AboutMe = () => {
         or exploring new technologies through side projects. I believe in
         continuous learning and sharing knowledge with the developer community.
       </p>
+
+      <Education />
     </div>
   );
 };
