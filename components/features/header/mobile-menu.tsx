@@ -15,7 +15,7 @@ export const MobileMenu = () => {
   return (
     <Sheet>
       <SheetTrigger className="md:hidden">
-        <LucideMenu className="text-primary h-8 w-8" />
+        <LucideMenu className="h-8 w-8" />
       </SheetTrigger>
       <SheetContent className="dark:bg-accent">
         <SheetHeader>
