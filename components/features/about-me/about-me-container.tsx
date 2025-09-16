@@ -10,7 +10,7 @@ export const AboutMeContainer = () => {
       id="about"
       className="scroll-mt-20 space-y-8"
     >
-      <div className="space-y-8 flex flex-wrap space-x-20">
+      <div className="space-y-8 flex flex-wrap md:space-x-20">
         <AboutMe />
         <WorkExperience />
       </div>

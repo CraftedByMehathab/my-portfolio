@@ -2,7 +2,7 @@ import React from "react";
 
 export const AboutMe = () => {
   return (
-    <div className="space-y-6 max-w-lg flex-1">
+    <div className="space-y-6 max-w-lg flex-1 min-w-3xs">
       <p>
         I&apos;m a passionate Senior Web Developer with over 10 years of
         experience building modern, responsive, and high-performance web
