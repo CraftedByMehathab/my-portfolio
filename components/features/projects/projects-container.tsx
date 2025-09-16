@@ -13,10 +13,10 @@ export const ProjectsContainer = () => {
     >
       <Card className="p-0 max-w-sm">
         <CardContent className="p-4 space-x-2 flex items-center">
-          <LucideConstruction className="h-8 w-8 text-amber-400" />
           <p className="text-amber-400 font-medium font-mono">
-            Comming soon ...
+            Comming soon...
           </p>
+          <LucideConstruction className="h-8 w-8 text-amber-400" />
         </CardContent>
       </Card>
     </ContainerLayout>
