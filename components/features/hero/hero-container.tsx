@@ -5,7 +5,7 @@ import { FloatingText } from "./floating-text";
 import { Button } from "@/components/ui/button";
 import { LucideArrowRight, LucideMail } from "lucide-react";
 import Link from "next/link";
-import { contactPath } from "@/utils/paths";
+import { contactPath, projectsPath } from "@/utils/paths";
 
 const HeroIntroText = () => (
   <p className="text-lg max-w-md">
@@ -17,9 +17,11 @@ const HeroIntroText = () => (
 
 const ActionButtons = () => (
   <div className="flex flex-wrap justify-center items-center">
-    <Button size="lg" className="m-2">
-      View Projects
-      <LucideArrowRight />
+    <Button size="lg" className="m-2" asChild>
+      <Link href={projectsPath()}>
+        View Projects
+        <LucideArrowRight />
+      </Link>
     </Button>
     <Button variant="outline" size="lg" className="m-2" asChild>
       <Link href={contactPath()}>
@@ -65,14 +67,14 @@ const WebHeroContent = () => (
       <HeroIntroText />
       <ActionButtons />
     </div>
-    <div className="">
+    <div className="flex flex-col items-center space-y-4">
       <HeroImage className="w-80 h-80 shadow-2xl" />
     </div>
   </section>
 );
 export const HeroContainer = () => {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden pt-4 md:pt-0">
       <MobileHeroContent />
       <WebHeroContent />
       <div className="absolute -z-10 top-0 left-0 right-0 bottom-0">
