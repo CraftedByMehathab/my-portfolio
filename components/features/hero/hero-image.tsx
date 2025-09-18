@@ -18,7 +18,7 @@ export const HeroImage = ({ className = "" }: { className?: string }) => {
           height={400}
         ></Image>
       </div>
-      <p className="bg-primary inline-flex px-4 py-2 rounded-2xl">
+      <p className="bg-primary text-primary-foreground inline-flex px-4 py-2 rounded-2xl">
         #OPENTOWORK
       </p>
     </>
