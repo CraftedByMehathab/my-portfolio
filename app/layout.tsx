@@ -19,6 +19,24 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Mehathab Shaik | Portfolio",
   description: "Senior Software Engineer Portfolio",
+  applicationName: "Mehathab Shaik's Protfolio",
+  keywords: [
+    "Mehathab Shaik",
+    "Portfolio",
+    "#OPENTOWORK",
+    "Open to work",
+    "Senior Software Engineer",
+    "Frontend Developer",
+    "React Expert",
+    "Frontend Specialist",
+    "Senior Web Developer",
+    "Full Stack Developer",
+  ],
+  authors: [
+    { name: "Mehathab Shaik", url: "https://www.linkedin.com/in/mehathab/" },
+  ],
+  category: "Senior Software Engineer Portfolio",
+
   icons: {
     icon: [{ url: "/logo.svg", type: "image/svg+xml" }],
   },
