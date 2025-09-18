@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { HeroImage } from "./hero-image";
 import { Typewriting } from "@/components/type-writing";
@@ -6,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { LucideArrowRight, LucideMail } from "lucide-react";
 import Link from "next/link";
 import { contactPath, projectsPath } from "@/utils/paths";
+import { useIsMobile } from "@/hooks/use-is-mobile";
 
 const HeroIntroText = () => (
   <p className="text-lg max-w-md">
@@ -73,10 +75,10 @@ const WebHeroContent = () => (
   </section>
 );
 export const HeroContainer = () => {
+  const isMobile = useIsMobile();
   return (
     <div className="relative overflow-hidden pt-4 md:pt-0">
-      <MobileHeroContent />
-      <WebHeroContent />
+      {isMobile ? <MobileHeroContent /> : <WebHeroContent />}
       <div className="absolute -z-10 top-0 left-0 right-0 bottom-0">
         <FloatingText />
       </div>
