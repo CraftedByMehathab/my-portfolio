@@ -48,7 +48,7 @@ export const SkillsContainer = () => {
       className="scroll-mt-20 space-y-8"
       id="skills"
     >
-      <div className="grid md:grid-cols-7 grid-cols-1 gap-6 space-y-12">
+      <div className="grid md:grid-cols-7 grid-cols-1 gap-10 space-y-12">
         <div className="space-y-12 flex-2 md:col-span-4">
           <SkillSubContainer
             icon={<LucideLayoutDashboard />}
