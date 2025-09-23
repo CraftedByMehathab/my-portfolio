@@ -48,7 +48,7 @@ const items = [
   },
   {
     id: 6,
-    date: " Aug 2023 - Mar 2025",
+    date: " Aug 2023 - Current",
     title: "Senior Software Engineer @ TechWave LLC",
     description: "Founder",
   },
@@ -65,7 +65,7 @@ export const WorkExperience = () => {
             <TimelineItem key={item.id} step={item.id}>
               <TimelineHeader>
                 <TimelineSeparator />
-                <TimelineDate className="text-primary text-sm">
+                <TimelineDate className="text-primary text-sm font-semibold">
                   {item.date}
                 </TimelineDate>
                 <TimelineTitle className="sm:-mt-0.5">
