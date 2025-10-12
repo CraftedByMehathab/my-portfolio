@@ -7,6 +7,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 1,
+      images: ["https://mehathab.dev/mehathab.jpeg"],
+    },
+    {
+      url: "https://mehathab.dev/MehathabShaik_Resume.pdf",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.9,
     },
   ];
 }
