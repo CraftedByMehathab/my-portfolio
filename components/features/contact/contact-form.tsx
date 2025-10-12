@@ -7,6 +7,7 @@ import { sendContactUsEmailAction } from "./contact-action";
 import { SubmitButton } from "@/components/form/submit-button";
 import { LucideSend } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { toast } from "sonner";
 
 export const ContactForm = ({ className }: { className?: string }) => {
   const [actionState, action] = useActionState(
@@ -18,14 +19,12 @@ export const ContactForm = ({ className }: { className?: string }) => {
     onSuccess: ({ actionState }) => {
       console.log(actionState);
 
-      //   toast.success(actionState.message, {
-      //     duration: 3000,
-      //   });
+      toast.success(actionState.message);
     },
     onError: ({ actionState }) => {
       console.log(actionState);
 
-      //   if (actionState.message) toast.error(actionState.message);
+      if (actionState.message) toast.error(actionState.message);
     },
   });
   return (

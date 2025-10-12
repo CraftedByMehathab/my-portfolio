@@ -52,7 +52,7 @@ export async function sendContactUsEmailAction(
       subject: formData.get("subject"),
     });
 
-    const { data, error } = await sendContactUsEmail({
+    const { error } = await sendContactUsEmail({
       name: fields.name,
       email: fields.email,
       message: fields.message,
@@ -61,7 +61,7 @@ export async function sendContactUsEmailAction(
 
     if (error) return formErrorToActionState(error, formData);
 
-    return toActionState(`Email sent succesfully. Ref#: ${data?.id}`);
+    return toActionState(`Message sent.`);
   } catch (error) {
     return formErrorToActionState(error, formData);
   }
