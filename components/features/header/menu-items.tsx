@@ -17,7 +17,9 @@ export const MenuItems = () => {
       <MenuItem href={skillsPath()}>Skills</MenuItem>
       <MenuItem href={aboutPath()}>About</MenuItem>
       <MenuItem href={contactPath()}>Contact</MenuItem>
-      <MenuItem href={resumePath()}>Resume</MenuItem>
+      <MenuItem href={resumePath()} target="_blank">
+        Resume
+      </MenuItem>
     </>
   );
 };

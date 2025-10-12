@@ -49,6 +49,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <link rel="canonical" href="https://mehathab.dev" key="canonical" />
+      <meta name="description" content={metadata.description as string} />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

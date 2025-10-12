@@ -42,6 +42,7 @@ export const SkillChart = ({
       <Progress
         value={skillLevel * 20}
         className="transition-transform duration-1500 ease-out w-full"
+        title={title}
       />
     </section>
   );

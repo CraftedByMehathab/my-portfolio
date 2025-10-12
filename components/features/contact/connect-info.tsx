@@ -59,6 +59,7 @@ export const SocialIcons = ({
         iconClassName={iconClassName}
         icon={<LucideGithub />}
         href="https://github.com/CraftedByMehathab"
+        ariaLabel="Mehathab's github link - www.github.com/CraftedByMehathab"
       />
     </li>
     <li>
@@ -66,6 +67,7 @@ export const SocialIcons = ({
         iconClassName={iconClassName}
         icon={<LucideLinkedin />}
         href="https://www.linkedin.com/in/mehathab/"
+        ariaLabel="Mehathab's linkedin link - www.linkedin.com/in/mehathab"
       />
     </li>
     <li>
@@ -74,6 +76,7 @@ export const SocialIcons = ({
         icon={<LucideMail />}
         target="_self"
         href="mailto: mehathab.raja@outlook.com"
+        ariaLabel="Email to mehathab.raja@outlook.com"
       />
     </li>
   </ul>

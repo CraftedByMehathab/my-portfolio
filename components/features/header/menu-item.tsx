@@ -1,16 +1,20 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import React, { PropsWithChildren } from "react";
+import React, { AnchorHTMLAttributes, PropsWithChildren } from "react";
 
 export const MenuItem = ({
   href,
+  target,
   children,
-}: PropsWithChildren<{ href: string }>) => {
+}: PropsWithChildren<
+  Pick<AnchorHTMLAttributes<HTMLAnchorElement>, "href" | "target">
+>) => {
   return (
     <Button asChild variant="ghost" className="">
       <Link
         className="text-secondary-foreground hover:no-underline hover:border-b-0"
-        href={href}
+        href={href as string}
+        target={target}
       >
         {children}
       </Link>
